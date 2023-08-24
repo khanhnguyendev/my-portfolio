@@ -1,0 +1,7 @@
+build-minify/
+.firebaserc
+.firebase/
+build/.lektor/
+venv/
+build/
+env/
