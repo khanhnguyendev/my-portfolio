@@ -15,6 +15,6 @@ jobs:
         run: mkdir build && cp -r $(lektor project-info --output-path)/* build/
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          repoToken: "${{ secrets.PAT_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_PORTFOLIO_AE935 }}"
           projectId: my-portfolio-ae935
