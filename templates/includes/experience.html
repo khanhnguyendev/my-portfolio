@@ -1,0 +1,28 @@
+{% from "macros/translation.html" import transbag %}
+{% from "macros/translation.html" import transbagname %}
+<section id="experience" class="section section-experience">
+    <div class="animate-up">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-bar"></div>
+            <div class="timeline-inner clearfix">
+                {% for experience in bag(transbagname('intro', this.alt) + 'intro.experiences') %}
+                    <div class="timeline-box timeline-box-{{ loop.cycle('left', 'right') }}">
+                        <span class="dot"></span>
+
+                        <div class="timeline-box-inner animate-{{ loop.cycle('right', 'left') }}">
+                            <span class="arrow"></span>
+
+                            <div class="date">{{ experience.date }}</div>
+                            <h3>{{ experience.address }}</h3>
+                            <h4>{{ experience.position }}</h4>
+                            <p>{{ experience.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #experience -->

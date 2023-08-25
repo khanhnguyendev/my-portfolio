@@ -1,0 +1,94 @@
+{% from "macros/translation.html" import transbag %}
+{% from "macros/translation.html" import transbagname %}
+<section id="about" class="section section-about">
+    <div>
+        <div class="section-box">
+            <div class="profile">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-sm-push-7">
+                        <div class="profile-info">
+                            <div class="profile-preword"><span>{{ transbag('translate', this.alt, 'hello') }}</span></div>
+                            <h1 class="profile-title"><span>{{ transbag('translate', this.alt, 'i_m') }}</span> {{ transbag('translate', this.alt, 'my_name') }}</h1>
+
+                            <h2 class="profile-position">{{ transbag('translate', this.alt, 'developer') }}</h2>
+                        </div>
+                        <ul class="profile-list">
+                            <li class="clearfix">
+                                <strong class="title">{{ transbag('translate', this.alt, 'age') }}</strong>
+                                <span class="cont">26</span>
+                            </li>
+                            <li class="clearfix">
+                                <strong class="title">{{ transbag('translate', this.alt, 'address') }}</strong>
+                                <span class="cont">Ho Chi Minh, Vietnam</span>
+                            </li>
+                            <li class="clearfix">
+                                <strong class="title">{{ transbag('translate', this.alt, 'e-mail') }}</strong>
+                                <span class="cont"><a href="mailto:career@khanh-nguyen-is-a.dev">career@khanh-nguyen-is-a.dev</a></span>
+                            </li>
+                            <li class="clearfix">
+                                <strong class="title">{{ transbag('translate', this.alt, 'phone') }}</strong>
+                                <span class="cont"><a href="tel:+84834493989">+84 834 49 39 89</a></span>
+                            </li>
+                            <!-- <li class="clearfix">
+                                <strong class="title">{{ transbag('translate', this.alt, 'freelance') }}</strong>
+                                <span class="cont">maybe, why not</span>
+                            </li> -->
+                            <li class="clearfix">
+                                <strong class="title"><span class="button">Open for hire</span></strong>
+                                <span class="cont"><i class="rsicon rsicon-calendar"></i>From now</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-pull-5">
+                        <div class="profile-photo">
+                            <img class="lozad"
+                                src="{{ '/static/img/covers/avatar.jpg'|url }}" 
+                                data-src="{{ '/static/img/covers/avatar.jpg'|url }}" 
+                                alt="khanhnguyendev" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-social">
+                <ul class="social">
+                    <li>
+                        <a class="ripple-centered" aria-label="Github" rel="noopener" target="_blank" href="https://github.com/khanhnguyendev">
+                            <i class="rsicon rsicon-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ripple-centered" aria-label="Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/khanhnguyendev" target="_blank">
+                            <i class="rsicon rsicon-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ripple-centered" aria-label="LinkedIn" rel="noopener" target="_blank" href="https://www.linkedin.com/in/khanhnguyendev/" target="_blank">
+                            <i class="rsicon rsicon-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ripple-centered" aria-label="Skype" rel="noopener" target="_blank" href="skype:khanhnguyen.vlu"><i
+                            class="rsicon rsicon-skype"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ripple-centered" aria-label="Email" rel="noopener" target="_blank" href="mailto:career@khanh-nguyen-is-a.dev">
+                            <i class="rsicon rsicon-email"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-txt-btn">
+            <p><a href="javascript: void(0)" rel="noopener" class="btn btn-lg btn-border ripple" target="_blank"
+                  onclick="alert('Làm gì có! Cuộc sống mà!')">Download Resume</a></p>
+            <div class="text-left">
+                {% for line in bag(transbagname('intro', this.alt) + 'intro.about') %}
+                    <div>{{ line }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #about -->

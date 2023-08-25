@@ -1,6 +1,57 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_sibling_nav %}
+{% block meta %}
+<meta name="author" content="{{ this.author }}">
+<meta name="description" content="{{ this.summary }}" />
+<meta property="og:description" content="{{ this.summary }}" />
+<meta property="twitter:description" content="{{ this.summary }}" />
+<meta property="og:image" content="{{ 'https://khanhnguyendev.com/static/img/' + this.cover|replace('.webp','.jpg') }}">
+<meta property="twitter:image" content="{{ 'https://khanhnguyendev.com/static/img/' + this.cover }}">
+{% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-  {{ render_blog_post(this) }}
+{% block static %}
+<link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
+{% endblock %}
+{% block content %}
+<div class="row animate-up animated">
+  <div class="col-sm-12">
+    <main class="post-single">
+      <article class="post-content section-box">
+          <header class="post-header">
+            <div class="post-data">
+              <div class="post-title-wrap">
+                <h1 class="post-title">{{ this.title }}</h1>
+              </div>
+              <div class="post-tag">
+                {% for t in this.tags -%}
+                    <a href="{{ ('/blog/tag/' ~ t)|url }}">
+                      #{{ t }}
+                    </a>
+                {% endfor %}
+              </div>
+              <div class="post-info">
+                <a href="javascript: void(0)"><i class="rsicon rsicon-user"></i>by {{ this.author }}</a>
+                <a href="javascript: void(0)"><i class="rsicon"></i>{{ this.pub_date.strftime('%b %d %Y') }}</a>
+              </div>
+            </div>
+          </header>
+          <div class="post-media">
+              <img class="lozad"
+                src="{{ '/static/img/uploads/458x300.webp'|url }}" 
+                data-src="{{ '/static/img/'|url + this.cover }}" 
+                alt="{{ this.title }}" />
+            </div>
+        <div class="post-inner">
+          <div class="post-editor clearfix">
+            {{ this.body }}
+          </div>
+        </div><!-- .post-inner -->
+      </article><!-- .post-content -->
+      {{ render_blog_sibling_nav(this) }}
+    </main>
+    <!-- .post-single -->
+  </div>
+</div>
+{% endblock %}
+{% block foot_static %}
 {% endblock %}

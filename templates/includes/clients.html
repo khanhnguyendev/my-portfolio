@@ -1,0 +1,17 @@
+{% from "macros/translation.html" import transbag %}
+{% from "macros/translation.html" import transbagname %}
+<section id="clients" class="section section-clients">
+    <div class="animate-up">
+
+        <div class="clients-carousel">
+            {% for brand in bag(transbagname('intro', this.alt) + 'intro.brands') %}
+                <div class="client-logo">
+                    <a href="{{ brand,url }}" target="_blank">
+                        <img src="{{ '/static/img/'|url + brand.img }}"
+                            title="{{ brand.title }}" alt="{{ brand.title }}"/></a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- #clients -->

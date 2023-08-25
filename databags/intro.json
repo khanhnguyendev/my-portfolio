@@ -1,0 +1,175 @@
+{
+    "intro": {
+        "about": [
+            "- I am a Middle Java Developer with more than 3 years of experience working in software development. "
+            , "- Experience with AWS services: IAM, CloudFormation, App Runner, ECR, ECS, CodePipeline, S3, Route53, SNS, CodeCommit, Lambda, System Manager (parameters store), Serects Manager and CloudWatch."
+            , "- Experience with Relational Databases (Oracle, PostgreSQL, MySQL Server, MongoDB). ORM technologies (JPA, Hibernate), Mirage-SQL"
+            , "- Experience with Microservices: Spring Cloud, Docker, CI/CD (Kubernetes, Jenkins, IAS, Helm)"
+            , "- Problem-solving skills. Work on bug fixing and improving application performance."
+            , "- Contribution idea to develop new feature and improve current feature."
+            , "- Why you should love me? Enthusiastic! I tend to help everyone no matter who they are. I would like to share my knowledge by writing, teaching and talking."
+        ],
+        "skills": [
+            {
+                "title": "Java",
+                "value": "90"
+            },
+            {
+                "title": "JavaScript",
+                "value": "70"
+            },
+            {
+                "title": "Spring",
+                "value": "80"
+            },
+            {   
+                "title": "Hibernate",
+                "value": "85"
+            },
+            {
+                "title": "Python",
+                "value": "60"
+            },
+            {
+                "title": "Django",
+                "value": "60"
+            },
+            {
+                "title": "Linux",
+                "value": "80"
+            },
+            {
+                "title": "Docker",
+                "value": "60"
+            },
+            {
+                "title": "Amazon Web Service",
+                "value": "80"
+            },
+            {
+                "title": "Docker",
+                "value": "60"
+            }
+        ],
+        "experiences": [
+            {
+                "date": "12/2022 - current",
+                "address": "GIANTY Vietnam Co., Ltd",
+                "position": "Middle Java developer",
+                "description": "Please download my resume for more information..." 
+            },
+            {
+                "date": "08/2020 - 12/2022",
+                "address": "FUJINET SYSTEMS JSC",
+                "position": "Java developer",
+                "description": "Please download my resume for more information..."
+            },
+            {
+                "date": "10/2018 - 05/2020",
+                "address": "REDSUN Inc.",
+                "position": "Java Developer Internship",
+                "description": "Please download my resume for more information..."
+            }
+        ],
+        "educations": [
+            {
+                "date": "03/2022",
+                "name": "Vault Fundamentals",
+                "supplier": "Thought Machine",
+                "desciption": ""
+            },
+            {
+                "date": "11/2020",
+                "name": "AWS Certified Security – Specialty",
+                "supplier": "Amazon Web Services",
+                "desciption": ""
+            },
+            {
+                "date": "05/2020",
+                "name": "Professional Certification - Professional Scrum Master I",
+                "supplier": "Scrum.org",
+                "desciption": ""
+            },
+            {
+                "date": "05/2020",
+                "name": "Oracle Certified Professional: Java SE 11 Developer",
+                "supplier": "ORACLE",
+                "desciption": ""
+            },
+            {
+                "date": "12/2019",
+                "name": "AWS Certified Solutions Architect - Professional",
+                "supplier": "Amazon Web Services",
+                "desciption": ""
+            },
+            {
+                "date": "11/2018",
+                "name": "Certified IT Architect – Foundation (CITA-F)",
+                "supplier": "IASA Global",
+                "desciption": ""
+            },
+            {
+                "date": "06/2018",
+                "name": "Oracle Certified Professional Java SE 8 Programmer II",
+                "supplier": "ORACLE",
+                "desciption": ""
+            },
+            {
+                "date": "03/2018",
+                "name": "Oracle Certified Associated Java SE 8 Programmer I",
+                "supplier": "ORACLE",
+                "desciption": ""
+            },
+            {
+                "date": "2012 - 2014",
+                "name": "Aptech Certified Computer Professional",
+                "supplier": "HANOI APTECH",
+                "desciption": ""
+            },
+            {
+                "date": "2010 - 2014",
+                "name": "Bachelor of Laws",
+                "supplier": "HANOI LAW UNIVERSITY",
+                "desciption": ""
+            }
+        ],
+        "brands": [
+            {
+                "url": "https://swift.com/",
+                "img": "brands/swift-200x200.webp",
+                "title": "swift"
+            },
+            {
+                "url": "#",
+                "img": "brands/ai-200x200.webp",
+                "title": "artificial intelligence"
+            },
+            {
+                "url": "https://www.docker.com/",
+                "img": "brands/docker-200x200.webp",
+                "title": "docker"
+            },
+            {
+                "url": "https://www.java.com/",
+                "img": "brands/java-200x200.webp",
+                "title": "java"
+            },
+            {
+                "url": "https://www.python.org/",
+                "img": "brands/python-200x200.webp",
+                "title": "python"
+            }
+        ],
+        "references": [
+            {
+                "name": "",
+                "avatar": "",
+                "work": "",
+                "content": ""
+            }
+        ],
+        "fun_description": [
+            "Hiện nay mình làm việc khá nhiều với Microservices .Cloud Computing và Affiliate Intelligence cũng là những trend mình khá hứng thú và sẽ tìm hiểu trong thời gian sắp tới."
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{% from "macros/translation.html" import transbag %}
+{% from "macros/translation.html" import transbagname %}
+<section id="education" class="section section-education">
+    <div class="animate-up">
+        <h2 class="section-title">Cerfitications</h2>
+        <div class="more-credly text-center">
+            <a href="https://www.credly.com/users/khanhnguyendev/badges" target="_blank">https://www.credly.com</a>
+        </div>
+        <div class="timeline">
+            <div class="timeline-bar"></div>
+            <div class="timeline-inner clearfix">
+                {% for education in bag(transbagname('intro', this.alt) + 'intro.educations') %}
+                    <div class="timeline-box timeline-box-compact timeline-box-{{ loop.cycle('left', 'right') }}">
+                        <span class="dot"></span>
+
+                        <div class="timeline-box-inner animate-{{ loop.cycle('right', 'left') }}">
+                            <span class="arrow"></span>
+
+                            <div class="date"><span>{{ education.date }}</span></div>
+                            <h3>{{ education.name }}</h3>
+                            <h4>{{ education.supplier }}</h4>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #education -->

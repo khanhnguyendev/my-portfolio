@@ -2,10 +2,16 @@
 {% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
+{% block content %}
+<div class="blog">
+    <div class="row">
+        <div class="grid-sizer"></div>
   {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
+      {{ render_blog_post(child, from_index=true) }}
   {% endfor %}
-
+</div>
+</div>
+{% if this.pagination.pages > 1 %}
   {{ render_pagination(this.pagination) }}
+{% endif %}
 {% endblock %}
